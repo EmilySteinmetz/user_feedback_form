@@ -33,3 +33,9 @@ input, textarea {
 textarea {
   height: 100px;
 }
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
