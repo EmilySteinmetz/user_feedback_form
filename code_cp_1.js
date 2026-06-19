@@ -17,3 +17,15 @@ form.addEventListener("input", function(event) {
     charCount.textContent = "Characters: " + event.target.value.length;
   }
 });
+
+form.addEventListener("mouseover", function(event) {
+  if (event.target.matches("input, textarea")) {
+    tooltip.textContent = event.target.dataset.tooltip;
+  }
+});
+
+form.addEventListener("mouseout", function(event) {
+  if (event.target.matches("input, textarea")) {
+    tooltip.textContent = "";
+  }
+});
