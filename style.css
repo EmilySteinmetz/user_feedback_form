@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#validation-message {
+  color: red;
+  font-weight: bold;
+}
+
+#tooltip {
+  color: #555;
+  font-style: italic;
+}
+
+.feedback-entry {
+  background-color: #e9f5ff;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 4px solid #0077cc;
+}
