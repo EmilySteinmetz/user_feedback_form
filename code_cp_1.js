@@ -29,3 +29,32 @@ form.addEventListener("mouseout", function(event) {
     tooltip.textContent = "";
   }
 });
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const comments = document.getElementById("comments").value.trim();
+
+  if (name === "" || email === "" || comments === "") {
+    validationMessage.textContent = "Please fill out all fields before submitting.";
+    return;
+  }
+
+  validationMessage.textContent = "";
+
+  const entry = document.createElement("div");
+  entry.className = "feedback-entry";
+
+  entry.innerHTML = `
+    <h3>${name}</h3>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Comments:</strong> ${comments}</p>
+  `;
+
+  feedbackDisplay.appendChild(entry);
+
+  form.reset();
+  charCount.textContent = "Characters: 0";
+});
