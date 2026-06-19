@@ -12,3 +12,7 @@ body {
   padding: 25px;
   border-radius: 10px;
 }
+
+h1, h2 {
+  text-align: center;
+}
