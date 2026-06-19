@@ -39,3 +39,8 @@ button {
   padding: 10px 15px;
   cursor: pointer;
 }
+
+#validation-message {
+  color: red;
+  font-weight: bold;
+}
