@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="container">
+    <h1>User Feedback Form</h1>
+
+    <form id="feedback-form">
+      <label>Name</label>
+      <input type="text" id="name" data-tooltip="Enter your full name">
+
+      <label>Email</label>
+      <input type="email" id="email" data-tooltip="Enter a valid email address">
+
+      <label>Comments</label>
+      <textarea id="comments" data-tooltip="Type your feedback here"></textarea>
+
+      <p id="char-count">Characters: 0</p>
+      <p id="validation-message"></p>
+      <p id="tooltip"></p>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <h2>Feedback Display</h2>
+    <div id="feedback-display"></div>
+  </div>
     
 </body>
 </html>
