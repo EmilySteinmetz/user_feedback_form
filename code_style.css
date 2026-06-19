@@ -49,3 +49,10 @@ button {
   color: #555;
   font-style: italic;
 }
+
+.feedback-entry {
+  background-color: #e9f5ff;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 4px solid #0077cc;
+}
