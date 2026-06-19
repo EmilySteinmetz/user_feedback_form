@@ -44,3 +44,8 @@ button {
   color: red;
   font-weight: bold;
 }
+
+#tooltip {
+  color: #555;
+  font-style: italic;
+}
